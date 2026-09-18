@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.cache/
+output/
+.snowflake/
+.streamlit/secrets.toml
+
+# Real YouTube session cookies — never commit, needed only for local/deployed
+# bot-detection workaround. Export your own via:
+#   yt-dlp --cookies-from-browser chrome --cookies youtube_cookies.txt
+youtube_cookies.txt

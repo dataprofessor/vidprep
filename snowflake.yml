@@ -1,0 +1,26 @@
+definition_version: 2
+entities:
+  vidprep:
+    type: streamlit
+    identifier:
+      name: VIDPREP
+      database: CHANINN_DEMO_DATA
+      schema: APPS
+    query_warehouse: CHANIN_XS
+    runtime_name: SYSTEM$ST_CONTAINER_RUNTIME_PY3_11
+    compute_pool: SYSTEM_COMPUTE_POOL_CPU
+    external_access_integrations:
+      - PYPI_ACCESS
+      - VIDEO_AI_EAI
+    main_file: app.py
+    artifacts:
+      - app.py
+      - acquire.py
+      - generate.py
+      - transcribe.py
+      - enhance.py
+      - cache.py
+      - config.py
+      - snowflake_conn.py
+      - pyproject.toml
+      - youtube_cookies.txt
